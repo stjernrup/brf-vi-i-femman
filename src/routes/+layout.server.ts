@@ -6,7 +6,7 @@ export async function load() {
 		space: env.CONTENTFUL_SPACE_ID,
 		accessToken: env.CONTENTFUL_ACCESS_TOKEN
 	});
-	const entries = await client.getEntry('3XyhbijuG6rfIaGSTuhA4D');
+	const entries = await client.getEntries();
 
 	return entries;
 }
